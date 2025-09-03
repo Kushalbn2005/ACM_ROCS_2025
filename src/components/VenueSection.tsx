@@ -16,18 +16,15 @@ const VenueSection = () => {
     {
       icon: <Coffee className="h-5 w-5" />,
       label: "Refreshments"
-    },
-    {
-      icon: <Clock className="h-5 w-5" />,
-      label: "Full Day Access"
     }
   ];
 
   const directions = [
-    "From Kottayam Railway Station: 15 minutes by taxi",
-    "From Cochin Airport: 90 minutes by road",
-    "Public transport available from city center",
-    "Campus shuttle service from nearby hotels"
+    "From Bengaluru City Railway Station (Majestic): 40 minutes by taxi/auto",
+    "From Kempegowda International Airport: 75–90 minutes by road",
+    "From Majestic Bus Stand (Kempegowda Bus Station): 40 minutes by BMTC bus/auto",
+    "Metro Access: Nearest station is National College (Namma Metro Green Line), 10 minutes by auto/taxi",
+    "Public Transport: Frequent BMTC buses from all parts of the city"
   ];
 
   return (
@@ -38,13 +35,10 @@ const VenueSection = () => {
             Venue Details
           </h2>
           <div className="w-24 h-1 bg-tech-gradient mx-auto mb-8"></div>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Join us at the beautiful campus of IIIT Kottayam in the heart of Kerala
-          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-          {/* Venue Information */}
+          {/* Left Side: Venue Info + How to Reach */}
           <div className="space-y-6">
             <Card className="hover:shadow-medium transition-shadow">
               <CardHeader>
@@ -55,14 +49,14 @@ const VenueSection = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
-                  <h3 className="font-semibold text-lg mb-2">Indian Institute of Information Technology Kottayam</h3>
+                  <h3 className="font-semibold text-lg mb-2">B.M.S College Of Engineering</h3>
                   <p className="text-muted-foreground">
-                    Valavoor Road, Pala<br />
-                    Kottayam, Kerala 686635<br />
+                    Bull Temple Road, Basavanagudi<br />
+                    Bengaluru, Karnataka 560004<br />
                     India
                   </p>
                 </div>
-                
+
                 <div className="flex flex-wrap gap-2">
                   {venueFeatures.map((feature, index) => (
                     <Badge key={index} variant="secondary" className="flex items-center gap-1">
@@ -73,10 +67,14 @@ const VenueSection = () => {
                 </div>
 
                 <div className="pt-4">
-                  <Button 
-                    variant="outline" 
+                  <Button
+                    variant="outline"
                     className="w-full"
-                    onClick={() => window.open('https://maps.google.com', '_blank')}
+                    onClick={() => {
+                      const destination = encodeURIComponent('Auditorium 1 and 2, BMSCE, Bengaluru, Karnataka');
+                      const url = `https://www.google.com/maps/dir/?api=1&destination=${destination}&travelmode=driving`;
+                      window.open(url, '_blank');
+                    }}
                   >
                     <Navigation className="h-4 w-4 mr-2" />
                     Get Directions
@@ -100,7 +98,25 @@ const VenueSection = () => {
                 </ul>
               </CardContent>
             </Card>
+          </div>
 
+          {/* Right Side: Map + Contact Info */}
+          <div className="space-y-6">
+            <Card className="overflow-hidden">
+              <div className="overflow-hidden rounded-lg shadow-md h-96">
+                <iframe
+                  title="Campus Location"
+                  width="100%"
+                  height="100%"
+                  loading="lazy"
+                  allowFullScreen
+                  className="rounded-lg"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0400782307994!2d77.5629794!3d12.9407325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae158eae5b2351%3A0xc700835ecd03e055!2sAuditorium%201%20and%202%2C%20BMSCE%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1693280000000!5m2!1sen!2sin"
+                />
+              </div>
+            </Card>
+
+            {/* Contact Information now on right side */}
             <Card className="hover:shadow-medium transition-shadow">
               <CardHeader>
                 <CardTitle className="text-xl">Contact Information</CardTitle>
@@ -108,53 +124,15 @@ const VenueSection = () => {
               <CardContent className="space-y-3">
                 <div className="flex items-center gap-2">
                   <Phone className="h-4 w-4 text-primary" />
-                  <span>+91-481-2597100</span>
+                  <span>+91 99722 05808</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Phone className="h-4 w-4 text-primary" />
+                  <span>+91 96862 69313</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="h-4 w-4 text-primary" />
-                  <span>rocs@iiitkottayam.ac.in</span>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Map/Image Placeholder */}
-          <div className="space-y-6">
-            <Card className="overflow-hidden">
-              <div className="h-64 bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin className="h-16 w-16 text-primary mx-auto mb-4" />
-                  <p className="text-lg font-semibold text-foreground">Interactive Map</p>
-                  <p className="text-muted-foreground">Campus location and facilities</p>
-                </div>
-              </div>
-            </Card>
-
-            <Card className="bg-gradient-to-r from-primary/5 to-accent/5 border-primary/20">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-foreground mb-4">About IIIT Kottayam</h3>
-                <p className="text-muted-foreground mb-4">
-                  Indian Institute of Information Technology Kottayam is a premier technical institution 
-                  established with the mission to foster innovation in information technology and computer science. 
-                  The campus provides state-of-the-art facilities for research and learning.
-                </p>
-                <div className="grid grid-cols-2 gap-4 text-sm">
-                  <div>
-                    <div className="font-semibold">Established</div>
-                    <div className="text-muted-foreground">2015</div>
-                  </div>
-                  <div>
-                    <div className="font-semibold">Campus Size</div>
-                    <div className="text-muted-foreground">100+ Acres</div>
-                  </div>
-                  <div>
-                    <div className="font-semibold">Research Labs</div>
-                    <div className="text-muted-foreground">15+ Labs</div>
-                  </div>
-                  <div>
-                    <div className="font-semibold">Auditorium</div>
-                    <div className="text-muted-foreground">500+ Seats</div>
-                  </div>
+                  <span>acm@bmsce.ac.in</span>
                 </div>
               </CardContent>
             </Card>
@@ -162,7 +140,35 @@ const VenueSection = () => {
         </div>
       </div>
     </section>
+
   );
 };
 
 export default VenueSection;
+
+{/*<Card className="bg-gradient-to-r from-primary/5 to-accent/5 border-primary/20">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold text-foreground mb-4">About BMSCE</h3>
+                <p className="text-muted-foreground mb-4">
+                  BMS College of Engineering is a renowned institution of higher education, established with the mission to provide quality technical education and nurture innovation in engineering and technology. The college offers a vibrant learning environment supported by modern infrastructure, advanced laboratories, and research facilities, empowering students to excel in academics, research, and industry.
+                </p>
+                <div className="grid grid-cols-2 gap-4 text-sm">
+                  <div>
+                    <div className="font-semibold">Established</div>
+                    <div className="text-muted-foreground">1946</div>
+                  </div>
+                  <div>
+                    <div className="font-semibold">Campus Size</div>
+                    <div className="text-muted-foreground">11+ Acres</div>
+                  </div>
+                  <div>
+                    <div className="font-semibold">Research Labs</div>
+                    <div className="text-muted-foreground">130+ Labs</div>
+                  </div>
+                  <div>
+                    <div className="font-semibold">Auditorium</div>
+                    <div className="text-muted-foreground">250+ Seats</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card> */}

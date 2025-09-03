@@ -153,7 +153,7 @@ const ScheduleSection = () => {
                   {session.time}
                 </Badge>
               </div>
-              
+
               <div className="flex-grow">
                 <div className="flex flex-col sm:flex-row sm:items-center gap-2 mb-2">
                   <h3 className="text-lg font-semibold text-foreground">
@@ -163,7 +163,7 @@ const ScheduleSection = () => {
                     {session.type}
                   </Badge>
                 </div>
-                
+
                 <div className="flex flex-col sm:flex-row gap-4 text-sm text-muted-foreground">
                   {session.speaker && (
                     <div className="flex items-center">
@@ -213,7 +213,7 @@ const ScheduleSection = () => {
             <Card>
               <CardHeader>
                 <CardTitle className="text-2xl text-center">
-                  Day 1 - Thursday, September 26, 2024
+                  Day 1 - Friday, September 26, 2025
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -226,7 +226,7 @@ const ScheduleSection = () => {
             <Card>
               <CardHeader>
                 <CardTitle className="text-2xl text-center">
-                  Day 2 - Friday, September 27, 2024
+                  Day 2 - Saturday, September 27, 2025
                 </CardTitle>
               </CardHeader>
               <CardContent>

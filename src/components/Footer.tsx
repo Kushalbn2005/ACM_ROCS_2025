@@ -8,17 +8,14 @@ const Footer = () => {
           {/* Event Info */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-tech-gradient rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold font-mono">R</span>
-              </div>
-              <span className="font-bold text-lg">ACM ROCS 2024</span>
+              <span className="font-bold text-lg">ACM ROCS 2025</span>
             </div>
             <p className="text-background/80 mb-4">
               Research Opportunities in Computer Science - Shaping the future of technology and innovation.
             </p>
             <p className="text-sm text-background/60">
-              September 26-27, 2024<br />
-              IIIT Kottayam, Kerala
+              September 26-27, 2025<br />
+              B.M.S College Of Engineering, Karnataka
             </p>
           </div>
 
@@ -33,13 +30,7 @@ const Footer = () => {
                 <a href="#speakers" className="hover:text-primary transition-colors">Speakers</a>
               </li>
               <li>
-                <a href="#schedule" className="hover:text-primary transition-colors">Schedule</a>
-              </li>
-              <li>
                 <a href="#venue" className="hover:text-primary transition-colors">Venue</a>
-              </li>
-              <li>
-                <a href="#contact" className="hover:text-primary transition-colors">Registration</a>
               </li>
             </ul>
           </div>
@@ -50,18 +41,22 @@ const Footer = () => {
             <div className="space-y-3 text-background/80">
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4" />
-                <span>rocs@iiitkottayam.ac.in</span>
+                <span>acm@bmsce.ac.in</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
-                <span>+91-481-2597100</span>
+                <div className="flex flex-col">
+                  <span>+91 99722 05808</span>
+                  <span>+91 96862 69313</span>
+                </div>
               </div>
+
               <div className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-1" />
                 <span>
-                  IIIT Kottayam<br />
-                  Valavoor Road, Pala<br />
-                  Kottayam, Kerala 686635
+                  B.M.S College Of Engineering<br />
+                  Bull Temple Road, Basavanagudi<br />
+                  Bengaluru, Karnataka 560004
                 </span>
               </div>
             </div>
@@ -70,21 +65,21 @@ const Footer = () => {
 
         <div className="border-t border-background/20 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-background/60">
-            <p>© 2024 ACM ROCS. All rights reserved.</p>
+            <p>© 2025 ACM ROCS. All rights reserved.</p>
             <div className="flex items-center gap-4 mt-4 md:mt-0">
-              <a 
-                href="https://iiitkottayam.ac.in" 
-                target="_blank" 
+              <a
+                href="https://www.bmsce.ac.in/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1 hover:text-primary transition-colors"
               >
-                IIIT Kottayam
+                BMSCE
                 <ExternalLink className="h-3 w-3" />
               </a>
               <span>•</span>
-              <a 
-                href="https://india.acm.org" 
-                target="_blank" 
+              <a
+                href="https://india.acm.org"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1 hover:text-primary transition-colors"
               >

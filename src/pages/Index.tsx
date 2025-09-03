@@ -14,10 +14,8 @@ const Index = () => {
       <main>
         <HeroSection />
         <AboutSection />
-        <SpeakersSection />
-        <ScheduleSection />
         <VenueSection />
-        <ContactSection />
+        <SpeakersSection />
       </main>
       <Footer />
     </div>

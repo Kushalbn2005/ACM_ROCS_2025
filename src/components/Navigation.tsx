@@ -19,9 +19,7 @@ const Navigation = () => {
     { href: '#home', label: 'Home' },
     { href: '#about', label: 'About' },
     { href: '#venue', label: 'Venue' },
-    { href: '#speakers', label: 'Speakers' },
-    { href: '#schedule', label: 'Schedule' },
-    { href: '#contact', label: 'Contact' },
+    { href: '#speakers', label: 'Speakers' }
   ];
 
   const scrollToSection = (href: string) => {
@@ -33,56 +31,52 @@ const Navigation = () => {
   };
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled 
-        ? 'bg-white/95 backdrop-blur-md shadow-medium border-b border-border/50' 
-        : 'bg-transparent'
-    }`}>
+    <nav
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled
+          ? 'bg-white/95 backdrop-blur-md shadow-medium border-b border-border/50'
+          : 'bg-transparent'
+        }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-tech-gradient rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold font-mono">R</span>
-            </div>
-            <span className={`font-bold text-lg transition-colors ${
-              isScrolled ? 'text-foreground' : 'text-white'
-            }`}>
-              ACM ROCS
-            </span>
-          </div>
-
-          {/* Desktop Navigation */}
+          {/* Left side - Nav items */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
-                  isScrolled ? 'text-foreground/80' : 'text-white/90'
-                }`}
+                className={`text-sm font-medium transition-colors hover:text-primary ${isScrolled ? 'text-foreground/80' : 'text-white/90'
+                  }`}
               >
                 {item.label}
               </button>
             ))}
-            <Button 
+          </div>
+
+          {/* Right side - Register Now */}
+          <div className="hidden md:flex">
+            <Button
               variant={isScrolled ? 'default' : 'hero'}
               size="sm"
-              onClick={() => scrollToSection('#contact')}
+              onClick={() => window.open('https://example.com/register', '_blank')}
             >
               Register Now
             </Button>
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center gap-3">
             <Button
               variant="ghost"
               size="icon"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className={isScrolled ? 'text-foreground' : 'text-white'}
             >
-              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isMobileMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </Button>
           </div>
         </div>
@@ -100,12 +94,14 @@ const Navigation = () => {
                   {item.label}
                 </button>
               ))}
-              <div className="px-3 py-2">
-                <Button 
+              <div className="px-3 py-2 flex items-center justify-between">
+                <Button
                   variant="default"
                   size="sm"
-                  onClick={() => scrollToSection('#contact')}
-                  className="w-full"
+                  onClick={() =>
+                    window.open('https://example.com/register', '_blank')
+                  }
+                  className="w-auto"
                 >
                   Register Now
                 </Button>
