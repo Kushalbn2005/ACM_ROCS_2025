@@ -24,6 +24,9 @@ const Footer = () => {
             <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2 text-background/80">
               <li>
+                <a href="#home" className="hover:text-primary transition-colors">Home</a>
+              </li>
+              <li>
                 <a href="#about" className="hover:text-primary transition-colors">About ROCS</a>
               </li>
               <li>
@@ -43,13 +46,21 @@ const Footer = () => {
                 <Mail className="h-4 w-4" />
                 <span>acm@bmsce.ac.in</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Phone className="h-4 w-4" />
-                <div className="flex flex-col">
-                  <span>+91 99722 05808</span>
-                  <span>+91 96862 69313</span>
+              <div className="space-y-2">
+                <div className="flex items-center gap-2">
+                  <Phone className="h-4 w-4 text-primary" />
+                  <span>
+                    Indraneel <span >(Vice Chair)</span> - +91 99722 05808
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Phone className="h-4 w-4 text-primary" />
+                  <span>
+                    Dr. Seemanthini K <span >(Faculty Co-ordinator)</span> - +91 96862 69313
+                  </span>
                 </div>
               </div>
+
 
               <div className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-1" />
@@ -90,7 +101,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
+    </footer >
   );
 };
 

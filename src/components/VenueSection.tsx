@@ -124,11 +124,11 @@ const VenueSection = () => {
               <CardContent className="space-y-3">
                 <div className="flex items-center gap-2">
                   <Phone className="h-4 w-4 text-primary" />
-                  <span>+91 99722 05808</span>
+                  <span>Indraneel (Vice Chair) - +91 99722 05808</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="h-4 w-4 text-primary" />
-                  <span>+91 96862 69313</span>
+                  <span>Dr. Seemanthini K (Faculty Co-ordinator) - +91 96862 69313</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="h-4 w-4 text-primary" />

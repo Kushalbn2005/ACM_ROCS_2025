@@ -1,9 +1,6 @@
 import React from 'react';
 import { Card, CardContent } from './ui/card';
 import { Linkedin, Mail } from 'lucide-react';
-import speaker1 from '@/assets/speaker1.jpg';
-import speaker2 from '@/assets/speaker2.jpg';
-import speaker3 from '@/assets/speaker3.jpg';
 
 type Speaker = {
   name: string;
@@ -25,7 +22,7 @@ const speakers: Speaker[] = [
   },
   {
     name: "Meenakshi D'Souza",
-    title: "OCCE award winner, Current President of ACM India Council ",
+    title: "OCCE award winner, Current President of ACM India Council",
     institution: "IIIT Bangalore",
     image: "./src/assets/Meenakshi 2.jpeg",
     email: "priya.sharma@iiitd.ac.in",
@@ -39,12 +36,21 @@ const speakers: Speaker[] = [
     email: "arun.patel@iitj.ac.in",
     linkedin: "#",
   },
+  {
+    name: "Siddharth Barman",
+    title: "ECR Award Winner",
+    institution: "IISc Bangalore",
+    image: "./src/assets/Siddharth.jpeg",
+    email: "arun.patel@iitj.ac.in",
+    linkedin: "#",
+  },
 ];
 
 const SpeakersSection: React.FC = () => {
   return (
     <section id="speakers" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Distinguished Speakers
@@ -54,19 +60,23 @@ const SpeakersSection: React.FC = () => {
             Learn from industry experts and accomplished researchers who are shaping the future of computer science
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        {/* Flex Layout with wider cards and more gap */}
+        <div className="flex flex-wrap justify-center gap-12">
           {speakers.map((speaker, index) => (
             <Card
               key={index}
-              className="group hover:shadow-strong transition-all duration-300 hover:-translate-y-4 overflow-hidden"
+              className="group hover:shadow-strong transition-all duration-300 hover:-translate-y-4 overflow-hidden w-full sm:w-[340px] md:w-[360px]"
             >
               <div className="relative">
                 <img
                   src={speaker.image}
                   alt={speaker.name}
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
+                {/* Overlay on hover */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                {/* Action buttons */}
                 <div className="absolute bottom-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
                   <a
                     href={`mailto:${speaker.email}`}

@@ -38,8 +38,9 @@ const AboutSection = () => {
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
               ROCS (Research Opportunities in Computer Science), pronounced ROCKS, is an ACM India initiative that introduces undergraduate students to cutting-edge research in computer science. The aim is to inspire students to explore research careers in both academia and industry.
               <br /><br />
-              This is the first-ever two-day edition of ACM ROCS, designed to provide students with an immersive experience of learning, networking, and innovation in research.
+              This is the <span className="font-bold">first-ever two-day edition of ACM ROCS</span>, designed to provide students with an immersive experience of learning, networking, and innovation in research.
             </p>
+
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
