@@ -9,10 +9,10 @@ const VenueSection = () => {
       icon: <Wifi className="h-5 w-5" />,
       label: "Free WiFi"
     },
-    {
-      icon: <Car className="h-5 w-5" />,
-      label: "Parking Available"
-    },
+    // {
+    //   icon: <Car className="h-5 w-5" />,
+    //   label: "Parking Available"
+    // },
     {
       icon: <Coffee className="h-5 w-5" />,
       label: "Refreshments"
@@ -49,9 +49,9 @@ const VenueSection = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
-                  <h3 className="font-semibold text-lg mb-2">B.M.S College Of Engineering</h3>
+                  <h3 className="font-semibold text-lg mb-2">B.M.S. College Of Engineering</h3>
                   <p className="text-muted-foreground">
-                    Bull Temple Road, Basavanagudi<br />
+                    Bull Temple Road, Basavanagudi,<br />
                     Bengaluru, Karnataka 560004<br />
                     India
                   </p>
@@ -124,11 +124,11 @@ const VenueSection = () => {
               <CardContent className="space-y-3">
                 <div className="flex items-center gap-2">
                   <Phone className="h-4 w-4 text-primary" />
-                  <span>Indraneel (Student Co-ordinator) - +91 99722 05808</span>
+                  <span><b>Indraneel</b> (Student Co-ordinator) - +91 99722 05808</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="h-4 w-4 text-primary" />
-                  <span>Dr. Seemanthini K (Faculty Co-ordinator) - +91 96862 69313</span>
+                  <span><b>Dr. Seemanthini K</b> (Faculty Co-ordinator) - +91 96862 69313</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="h-4 w-4 text-primary" />

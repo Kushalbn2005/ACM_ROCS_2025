@@ -38,7 +38,7 @@ const HeroSection = () => {
             className="h-16 sm:h-20 md:h-28 lg:h-32 w-auto object-contain"
           />
           <img
-            src="./src/assets/BMSCE_ACM_BLUE.svg"
+            src="./src/assets/BMSCE-ACM-BLUE.png"
             alt="BMSCE ACM Logo"
             className="h-24 sm:h-28 md:h-28 lg:h-44 w-auto object-contain"
           />

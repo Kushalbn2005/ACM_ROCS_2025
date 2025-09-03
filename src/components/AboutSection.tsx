@@ -36,7 +36,7 @@ const AboutSection = () => {
             </h2>
             <div className="w-24 h-1 bg-tech-gradient mx-auto mb-8"></div>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              ROCS (Research Opportunities in Computer Science), pronounced ROCKS, is an ACM India initiative that introduces undergraduate students to cutting-edge research in computer science. The aim is to inspire students to explore research careers in both academia and industry.
+              ROCS (Research Opportunities in Computer Science), pronounced ROCKS, is an ACM India initiative that introduces undergraduate students to cutting-edge research in Computer Science. The aim is to inspire students to explore research careers in both academia and industry.
               <br /><br />
               This is the <span className="font-bold">first-ever two-day edition of ACM ROCS</span>, designed to provide students with an immersive experience of learning, networking, and innovation in research.
             </p>
@@ -83,7 +83,7 @@ const AboutSection = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <GraduationCap className="h-12 w-12 text-primary mx-auto mb-6" />
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            About BMS College of Engineering
+            About B.M.S. College of Engineering
           </h2>
           <div className="w-24 h-1 bg-tech-gradient mx-auto mb-8"></div>
           <p className="text-xl text-muted-foreground max-w-5xl mx-auto leading-relaxed">
