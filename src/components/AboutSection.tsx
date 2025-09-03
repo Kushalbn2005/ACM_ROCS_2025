@@ -66,7 +66,7 @@ const AboutSection = () => {
           {/* Explore More Button */}
           <div className="mt-12 text-center">
             <a
-              href="https://example.com" // replace with your external link
+              href="https://india.acm.org/research/research-opportunities-in-cs" // replace with your external link
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-6 py-3 bg-primary text-white font-semibold rounded-full shadow-md hover:bg-primary/90 transition-colors"
