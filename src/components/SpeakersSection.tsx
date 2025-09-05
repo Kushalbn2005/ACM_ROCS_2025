@@ -15,7 +15,7 @@ type Speaker = {
 const speakers: Speaker[] = [
   {
     name: "Jayant Haritsa",
-    title: "Infosys Prize Winner, Bhatnagar Award winner, Former President of ACM",
+    title: "Infosys Prize Winner, Bhatnagar Award Winner, Former President of ACM",
     institution: "IISc Bangalore",
     image: "./src/assets/jayanth.jpg",
     email: "#",
@@ -24,7 +24,7 @@ const speakers: Speaker[] = [
   },
   {
     name: "Meenakshi D'Souza",
-    title: "OCCE award winner, Current President of ACM India Council",
+    title: "OCCE Award Winner, Current President of ACM India Council",
     institution: "IIIT Bangalore",
     image: "./src/assets/Meenakshi 2.jpeg",
     email: "#",
@@ -33,7 +33,7 @@ const speakers: Speaker[] = [
   },
   {
     name: "Bhavana Kanukruthi",
-    title: "",
+    title: "Associate Professor, CSA",
     institution: "IISc Bangalore",
     image: "./src/assets/Bhavana.jpeg",
     email: "#",
@@ -62,7 +62,7 @@ const SpeakersSection: React.FC = () => {
           </h2>
           <div className="w-24 h-1 bg-tech-gradient mx-auto mb-8"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Learn from industry experts and accomplished researchers who are shaping the future of Computer Science
+            Learn from industry experts and accomplished competitive programmers
           </p>
         </div>
         {/* Flex Layout with wider cards and more gap */}

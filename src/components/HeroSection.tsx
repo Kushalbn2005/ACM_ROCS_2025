@@ -18,7 +18,7 @@ const HeroSection = () => {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0 bg-black/80" />
 
       {/* Glass/blur shapes */}
       <div className="absolute inset-0 pointer-events-none">
@@ -29,7 +29,6 @@ const HeroSection = () => {
       {/* Main Content */}
       <div className="relative z-10 w-full max-w-3xl px-5 py-12 flex flex-col items-center text-center space-y-6">
 
-        {/* Logos above title */}
         {/* Logos above title */}
         <div className="flex items-center justify-center gap-8 mb-6 flex-wrap">
           <img
@@ -43,7 +42,6 @@ const HeroSection = () => {
             className="h-24 sm:h-28 md:h-28 lg:h-44 w-auto object-contain"
           />
         </div>
-
 
         <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tighter drop-shadow-lg">
           ACM <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">ROCS 2025</span>
@@ -73,6 +71,11 @@ const HeroSection = () => {
             Learn More
           </Button>
         </div>
+
+        {/* New Note Below Buttons */}
+        <p className="text-white/90 text-md md:text-lg italic">
+          *Open to all college students
+        </p>
 
         <div className="flex justify-center gap-8 my-2">
           <div className="flex items-center gap-2 text-white/80">
