@@ -12,7 +12,7 @@ const HeroSection = () => {
       id="home"
       className="relative min-h-screen flex items-center justify-center bg-black"
       style={{
-        backgroundImage: `url(./src/assets/campus2.jpeg)`,
+        backgroundImage: `url(./images/campus2.jpeg)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}
@@ -32,12 +32,12 @@ const HeroSection = () => {
         {/* Logos above title */}
         <div className="flex items-center justify-center gap-8 mb-6 flex-wrap">
           <img
-            src="./src/assets/ACM-BLUE.svg"
+            src="./images/ACM-BLUE.svg"
             alt="ACM Logo"
             className="h-16 sm:h-20 md:h-28 lg:h-32 w-auto object-contain"
           />
           <img
-            src="./src/assets/BMSCE-ACM-BLUE.png"
+            src="./images/BMSCE-ACM-BLUE.png"
             alt="BMSCE ACM Logo"
             className="h-24 sm:h-28 md:h-28 lg:h-44 w-auto object-contain"
           />
