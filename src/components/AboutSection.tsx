@@ -79,38 +79,10 @@ const AboutSection = () => {
 
 
       {/* About BMSCE */}
-      <section id="bmsce" className="py-20 bg-muted/30">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <GraduationCap className="h-12 w-12 text-primary mx-auto mb-6" />
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            About B.M.S. College of Engineering
-          </h2>
-          <div className="w-24 h-1 bg-tech-gradient mx-auto mb-8"></div>
-          <p className="text-xl text-muted-foreground max-w-5xl mx-auto leading-relaxed">
-            B.M.S. College of Engineering (BMSCE), established in 1946, is the first private engineering college in India. Located in Bengaluru, BMSCE is known for its rich tradition of academic excellence, innovation, and industry collaboration. The college offers a wide range of undergraduate, postgraduate, and doctoral programs, and is recognized as a Tier-1 institution under NBA accreditation.
-          </p>
-          <p className="text-xl text-muted-foreground max-w-5xl mx-auto mt-6 leading-relaxed">
-            With a vibrant student community, strong research culture, and state-of-the-art infrastructure, BMSCE continues to be a pioneer in engineering education, nurturing talent and shaping future leaders in technology and research.
-          </p>
-        </div>
-      </section>
+
 
       {/* About BMSCE ACM Student Chapter */}
-      <section id="bmsce-acm" className="py-20 section-gradient">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Code className="h-12 w-12 text-primary mx-auto mb-6" />
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            About BMSCE ACM Student Chapter
-          </h2>
-          <div className="w-24 h-1 bg-tech-gradient mx-auto mb-8"></div>
-          <p className="text-xl text-muted-foreground max-w-5xl mx-auto leading-relaxed">
-            The ACM Student Chapter at B.M.S. College of Engineering is a vibrant community of students passionate about computing, technology, and innovation. As part of the Association for Computing Machinery (ACM), the world’s largest computing society, the chapter aims to provide a platform for students to learn, collaborate, and explore diverse areas of computer science.
-          </p>
-          <p className="text-xl text-muted-foreground max-w-5xl mx-auto mt-6 leading-relaxed">
-            The chapter organizes a variety of activities including technical talks, workshops, hackathons, coding competitions, and peer learning programs, helping students enhance both their technical and professional skills. With a focus on knowledge sharing, mentorship, and industry-academia interaction, the BMSCE ACM Student Chapter empowers students to grow beyond the classroom and contribute to the wider computing community.
-          </p>
-        </div>
-      </section>
+
     </>
   );
 };

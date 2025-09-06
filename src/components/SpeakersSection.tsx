@@ -49,6 +49,24 @@ const speakers: Speaker[] = [
     linkedin: "https://www.linkedin.com/in/siddharth-barman-6a759022a/?originalSubdomain=in",
     website: "https://www.csa.iisc.ac.in/~barman/",
   },
+  {
+    name: "Siddharth Barman",
+    title: "ECR Award Winner",
+    institution: "IISc Bangalore",
+    image: "",
+    email: "#",
+    linkedin: "https://www.linkedin.com/in/siddharth-barman-6a759022a/?originalSubdomain=in",
+    website: "https://www.csa.iisc.ac.in/~barman/",
+  },
+  {
+    name: "Siddharth Barman",
+    title: "ECR Award Winner",
+    institution: "IISc Bangalore",
+    image: "",
+    email: "#",
+    linkedin: "https://www.linkedin.com/in/siddharth-barman-6a759022a/?originalSubdomain=in",
+    website: "https://www.csa.iisc.ac.in/~barman/",
+  },
 ];
 
 const SpeakersSection: React.FC = () => {
@@ -79,7 +97,7 @@ const SpeakersSection: React.FC = () => {
                   className="w-full h-72 object-cover block group-hover:scale-105 transition-transform duration-300"
                 />
                 {/* Overlay on hover */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
+                {/* <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" /> */}
                 {/* Action buttons */}
                 <div className="absolute bottom-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
                   <a

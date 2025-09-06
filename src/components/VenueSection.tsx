@@ -128,6 +128,10 @@ const VenueSection = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="h-4 w-4 text-primary" />
+                  <span><b>Dhruva</b> (Student Co-ordinator) - +91 91088 74443</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Phone className="h-4 w-4 text-primary" />
                   <span><b>Dr. Seemanthini K</b> (Faculty Co-ordinator) - +91 96862 69313</span>
                 </div>
                 <div className="flex items-center gap-2">

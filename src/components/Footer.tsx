@@ -57,6 +57,13 @@ const Footer = () => {
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-primary" />
                 <span>
+                  Dhruva <span >(Student Co-ordinator)</span> <br />
+                  <span className="font-mono">+91 91088 74443</span>
+                </span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Phone className="h-4 w-4 text-primary" />
+                <span>
                   Dr. Seemanthini K <span >(Faculty Co-ordinator)</span> <br />
                   <span className="font-mono">+91 96862 69313</span>
                 </span>
