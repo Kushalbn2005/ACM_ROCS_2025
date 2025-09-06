@@ -52,7 +52,7 @@ const VenueSection = () => {
                   <h3 className="font-semibold text-lg mb-2">B.M.S. College Of Engineering</h3>
                   <p className="text-muted-foreground">
                     Bull Temple Road, Basavanagudi,<br />
-                    Bengaluru, Karnataka 560004<br />
+                    Bengaluru, Karnataka 560019<br />
                     India
                   </p>
                 </div>

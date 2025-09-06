@@ -73,7 +73,7 @@ const Footer = () => {
                 <span>
                   B.M.S College Of Engineering<br />
                   Bull Temple Road, Basavanagudi<br />
-                  Bengaluru, Karnataka 560004
+                  Bengaluru, Karnataka 560019
                 </span>
               </div>
             </div>
