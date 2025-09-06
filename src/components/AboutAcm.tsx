@@ -30,7 +30,7 @@ const AboutAcm = () => {
 
                         {/* Optional Button */}
                         <Button className="mt-6 rounded-full">
-                            <a href="">Explore More</a>
+                            <a href="https://bmsce.acm.org/" target='_blank'>Explore More</a>
                         </Button>
                     </div>
 

@@ -18,8 +18,8 @@ const Navigation = () => {
   const navItems = [
     { href: '#home', label: 'Home' },
     { href: '#about', label: 'About' },
-    { href: '#venue', label: 'Venue' },
-    { href: '#speakers', label: 'Speakers' }
+    { href: '#speakers', label: 'Speakers' },
+    { href: '#venue', label: 'Venue' }
   ];
 
   const scrollToSection = (href: string) => {
@@ -33,8 +33,8 @@ const Navigation = () => {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-medium border-b border-border/50'
-          : 'bg-transparent'
+        ? 'bg-white/95 backdrop-blur-md shadow-medium border-b border-border/50'
+        : 'bg-transparent'
         }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

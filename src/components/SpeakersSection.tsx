@@ -50,13 +50,13 @@ const speakers: Speaker[] = [
     website: "https://www.csa.iisc.ac.in/~barman/",
   },
   {
-    name: "Siddharth Barman",
-    title: "ECR Award Winner",
+    name: "Dr. Yogesh Simmhan",
+    title: "EuroPar Distinguished Paper Award, Microsoft Ship-It Award, 2009",
     institution: "IISc Bangalore",
-    image: "",
+    image: "./images/Dr.Yogesh.jpg",
     email: "#",
-    linkedin: "https://www.linkedin.com/in/siddharth-barman-6a759022a/?originalSubdomain=in",
-    website: "https://www.csa.iisc.ac.in/~barman/",
+    linkedin: "https://www.linkedin.com/in/simmhan/",
+    website: "https://cds.iisc.ac.in/faculty/simmhan/",
   },
   {
     name: "Siddharth Barman",
@@ -90,22 +90,19 @@ const SpeakersSection: React.FC = () => {
               key={index}
               className="group hover:shadow-strong transition-all duration-300 hover:-translate-y-4 overflow-hidden w-full sm:w-[340px] md:w-[360px]"
             >
-              <div className="relative">
+              <div className="relative w-full h-72 group overflow-hidden rounded-t-lg">
+                {/* Image */}
                 <img
                   src={speaker.image}
                   alt={speaker.name}
-                  className="w-full h-72 object-cover block group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover block group-hover:scale-105 transition-transform duration-300"
                 />
-                {/* Overlay on hover */}
-                {/* <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" /> */}
+
+                {/* Dark overlay */}
+                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+
                 {/* Action buttons */}
-                <div className="absolute bottom-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <a
-                    href={`mailto:${speaker.email}`}
-                    className="p-2 bg-white/20 hover:bg-white/30 rounded-full text-white transition-colors"
-                  >
-                    <Mail className="h-4 w-4" />
-                  </a>
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex opacity-0 group-hover:opacity-100 transition-opacity z-20">
                   <a
                     href={speaker.linkedin}
                     className="p-2 bg-white/20 hover:bg-white/30 rounded-full text-white transition-colors"
@@ -116,6 +113,7 @@ const SpeakersSection: React.FC = () => {
                   </a>
                 </div>
               </div>
+
               <CardContent className="p-6">
                 <div className="text-center mb-4">
                   <a
@@ -140,4 +138,4 @@ const SpeakersSection: React.FC = () => {
   );
 };
 
-export default SpeakersSection;
+export default SpeakersSection;  
