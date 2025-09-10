@@ -4,20 +4,20 @@ import { Badge } from './ui/badge';
 import { Button } from './ui/button';
 
 const VenueSection = () => {
-  const venueFeatures = [
-    {
-      icon: <Wifi className="h-5 w-5" />,
-      label: "Free WiFi"
-    },
-    // {
-    //   icon: <Car className="h-5 w-5" />,
-    //   label: "Parking Available"
-    // },
-    {
-      icon: <Coffee className="h-5 w-5" />,
-      label: "Refreshments"
-    }
-  ];
+  // const venueFeatures = [
+  //   {
+  //     icon: <Wifi className="h-5 w-5" />,
+  //     label: "Free WiFi"
+  //   },
+  //   {
+  //     icon: <Car className="h-5 w-5" />,
+  //     label: "Parking Available"
+  //   },
+  //   {
+  //     icon: <Coffee className="h-5 w-5" />,
+  //     label: "Refreshments"
+  //   }
+  // ];
 
   const directions = [
     "From Bengaluru City Railway Station (Majestic): 40 minutes by taxi/auto",
@@ -57,14 +57,14 @@ const VenueSection = () => {
                   </p>
                 </div>
 
-                <div className="flex flex-wrap gap-2">
+                {/* <div className="flex flex-wrap gap-2">
                   {venueFeatures.map((feature, index) => (
                     <Badge key={index} variant="secondary" className="flex items-center gap-1">
                       {feature.icon}
                       {feature.label}
                     </Badge>
                   ))}
-                </div>
+                </div> */}
 
                 <div className="pt-4">
                   <Button
