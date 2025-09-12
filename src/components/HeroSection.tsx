@@ -85,7 +85,7 @@ const HeroSection = () => {
             <MapPin className="h-6 w-6" /> <span>BMSCE, Karnataka</span>
           </div>
           <div className="flex items-center gap-2 text-white/80">
-            <Users className="h-6 w-6" /> <span>Hybrid Event</span>
+            <Users className="h-6 w-6" /> <span>Offline Event</span>
           </div>
         </div>
       </div>

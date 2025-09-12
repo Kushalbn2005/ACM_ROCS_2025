@@ -71,7 +71,7 @@ const AboutSection = () => {
               rel="noopener noreferrer"
               className="inline-block px-6 py-3 bg-primary text-white font-semibold rounded-full shadow-md hover:bg-primary/90 transition-colors"
             >
-              Explore More
+              Past ROCS
             </a>
           </div>
         </div>
