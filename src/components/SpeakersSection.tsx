@@ -15,7 +15,7 @@ type Speaker = {
 const speakers: Speaker[] = [
   {
     name: "Jayant Haritsa",
-    title: "Infosys Prize Winner, Bhatnagar Award Winner, Former President of ACM",
+    title: "Infosys Prize Winner, Bhatnagar Award Winner, Former President of ACM India Council",
     institution: "IISc Bangalore",
     image: "./images/jayanth.jpg",
     email: "#",
@@ -64,8 +64,17 @@ const speakers: Speaker[] = [
     institution: "TCS Research, Bangalore",
     image: "./images/jayavardhan.png",
     email: "#",
-    linkedin: "https://www.linkedin.com/in/siddharth-barman-6a759022a/?originalSubdomain=in",
-    website: "https://www.csa.iisc.ac.in/~barman/",
+    linkedin: "https://www.linkedin.com/in/jayavardhana-gubbi-43456223/?originalSubdomain=in",
+    website: "https://scholar.google.com/citations?user=Ec2g4ewAAAAJ&hl=en",
+  },
+  {
+    name: "Karthikeyan Shanmugam",
+    title: "Research Scientist",
+    institution: "Google Deepmind India",
+    image: "./images/Karthikeya.jpeg",
+    email: "#",
+    linkedin: "https://www.linkedin.com/in/karthikeyan-shanmugam-b324a113/?originalSubdomain=in",
+    website: "https://sites.google.com/view/karthikeyan-shanmugam",
   },
 ];
 
@@ -80,8 +89,9 @@ const SpeakersSection: React.FC = () => {
           </h2>
           <div className="w-24 h-1 bg-tech-gradient mx-auto mb-8"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Learn from industry experts and accomplished competitive programmers
+            Learn from industry experts and world renowned researchers.
           </p>
+          <p className='text-center text-xl text-muted-foreground max-w-3xl mx-auto'>(Timings : 9:30 am to 5:30 pm)</p>
         </div>
         {/* Flex Layout with wider cards and more gap */}
         <div className="flex flex-wrap justify-center gap-12">

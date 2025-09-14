@@ -27,6 +27,31 @@ const VenueSection = () => {
     "Public Transport: Frequent BMTC buses from all parts of the city"
   ];
 
+  const nearbyAccommodations = [
+    {
+      name: "Stopover Backpackers Stay",
+      distance: "2.9 km",
+      price: "₹414 + Tax",
+      guests: "1",
+      link: "https://www.booking.com/hotel/in/stopover-backpackers-stay.en-gb.html?label=city-bangalore-lFhfs8zRphgoriYNf1fcxAS619456497502%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-411432614298%3Alp9062012%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YUBh8MufZgNFf8lRRSfobmc&sid=daca61104547bbcb9a62c55fe811017d&aid=375025&ucfs=1&checkin=2025-09-26&checkout=2025-09-27&dest_id=-2090174&dest_type=city&group_adults=1&no_rooms=1&group_children=0&nflt=price%3DINR-min-1200-1&srpvid=e6822662a3bf0327&srepoch=1755840591&matching_block_id=1402895003_418861452_1_0_0&atlas_src=sr_iw_title",
+    },
+    {
+      name: "Greens Residency",
+      distance: "3 km",
+      price: "₹427 + Tax",
+      guests: "1",
+      link: "https://www.booking.com/hotel/in/greens-residency.en-gb.html?label=city-bangalore-lFhfs8zRphgoriYNf1fcxAS619456497502%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-411432614298%3Alp9062012%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YUBh8MufZgNFf8lRRSfobmc&sid=daca61104547bbcb9a62c55fe811017d&aid=375025&ucfs=1&checkin=2025-09-26&checkout=2025-09-27&dest_id=-2090174&dest_type=city&group_adults=1&no_rooms=1&group_children=0&nflt=price%3DINR-min-1200-1&srpvid=e6822662a3bf0327&srepoch=1755841180&matching_block_id=252420502_133686667_0_42_0&atlas_src=sr_iw_title",
+    },
+    {
+      name: "Sri Manjunatha Residency",
+      distance: "2.8 km",
+      price: "₹641 + Tax",
+      guests: "2",
+      link: "https://www.booking.com/hotel/in/sri-manjunatha-residency-bengaluru.en-gb.html?label=city-bangalore-lFhfs8zRphgoriYNf1fcxAS619456497502%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-411432614298%3Alp9062012%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YUBh8MufZgNFf8lRRSfobmc&sid=daca61104547bbcb9a62c55fe811017d&aid=375025&ucfs=1&checkin=2025-09-26&checkout=2025-09-27&dest_id=-2090174&dest_type=city&group_adults=1&no_rooms=1&group_children=0&nflt=price%3DINR-min-1200-1&srpvid=e6822662a3bf0327&srepoch=1755841513&matching_block_id=1429741101_414544309_2_0_0&atlas_src=sr_iw_title",
+    },
+  ];
+
+
   return (
     <section id="venue" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -141,6 +166,50 @@ const VenueSection = () => {
               </CardContent>
             </Card>
           </div>
+          {/* ✅ Nearby Accommodations – centered */}
+        </div>
+
+        <div className="flex justify-center mt-12">
+          <Card className="hover:shadow-medium transition-shadow max-w-4xl w-full">
+            <CardHeader>
+              <CardTitle className="text-xl">Nearby Accommodations</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="overflow-x-auto">
+                <table className="min-w-full border border-gray-300 text-left text-sm">
+                  <thead className="bg-gray-100">
+                    <tr>
+                      <th className="border px-4 py-2">Place</th>
+                      <th className="border px-4 py-2">Distance from BMSCE</th>
+                      <th className="border px-4 py-2">Price per night</th>
+                      <th className="border px-4 py-2">Number of Guests</th>
+                      <th className="border px-4 py-2">Booking.com Link</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {nearbyAccommodations.map((hotel, index) => (
+                      <tr key={index} className="odd:bg-white">
+                        <td className="border px-4 py-2 font-medium">{hotel.name}</td>
+                        <td className="border px-4 py-2">{hotel.distance}</td>
+                        <td className="border px-4 py-2">{hotel.price}</td>
+                        <td className="border px-4 py-2">{hotel.guests}</td>
+                        <td className="border px-4 py-2">
+                          <a
+                            href={hotel.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-primary hover:underline"
+                          >
+                            Click here
+                          </a>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
