@@ -58,7 +58,7 @@ const Navigation = () => {
             <Button
               variant={isScrolled ? 'default' : 'hero'}
               size="sm"
-              onClick={() => window.open('https://example.com/register', '_blank')}
+              onClick={() => window.open('https://in.explara.com/e/rocs-at-bms-college-of-engineering--bengaluru', '_blank')}
             >
               Register Now
             </Button>
@@ -99,7 +99,7 @@ const Navigation = () => {
                   variant="default"
                   size="sm"
                   onClick={() =>
-                    window.open('https://example.com/register', '_blank')
+                    window.open('https://in.explara.com/e/rocs-at-bms-college-of-engineering--bengaluru', '_blank')
                   }
                   className="w-auto"
                 >

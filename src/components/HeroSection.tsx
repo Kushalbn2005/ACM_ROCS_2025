@@ -1,4 +1,4 @@
-import { Calendar, MapPin, Users } from 'lucide-react';
+import { Calendar, MapPin, Users, Clock } from 'lucide-react';
 import { Button } from './ui/button';
 
 const HeroSection = () => {
@@ -57,7 +57,7 @@ const HeroSection = () => {
           <Button
             variant="hero"
             size="lg"
-            onClick={() => window.open("https://example.com/register", "_blank")}
+            onClick={() => window.open("https://in.explara.com/e/rocs-at-bms-college-of-engineering--bengaluru", "_blank")}
             className="text-lg px-8 py-4"
           >
             Register Now
@@ -77,9 +77,12 @@ const HeroSection = () => {
           *Open to all college students
         </p>
 
-        <div className="flex justify-center gap-8 my-2">
+        <div className="flex flex-col items-center gap-4 my-2 md:flex-row md:justify-center md:gap-8">
           <div className="flex items-center gap-2 text-white/80">
             <Calendar className="h-6 w-6" /> <span>September 26-27, 2025</span>
+          </div>
+          <div className="flex items-center gap-2 text-white/80 whitespace-nowrap">
+            <Clock className="h-6 w-6" /> <span>9:30 AM – 5:30 PM</span>
           </div>
           <div className="flex items-center gap-2 text-white/80">
             <MapPin className="h-6 w-6" /> <span>BMSCE, Karnataka</span>
@@ -88,6 +91,8 @@ const HeroSection = () => {
             <Users className="h-6 w-6" /> <span>Offline Event</span>
           </div>
         </div>
+
+
       </div>
     </section>
   );

@@ -91,7 +91,6 @@ const SpeakersSection: React.FC = () => {
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Learn from industry experts and world renowned researchers.
           </p>
-          <p className='text-center text-xl text-muted-foreground max-w-3xl mx-auto'>(Timings : 9:30 am to 5:30 pm)</p>
         </div>
         {/* Flex Layout with wider cards and more gap */}
         <div className="flex flex-wrap justify-center gap-12">
