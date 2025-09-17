@@ -49,6 +49,7 @@ const VenueSection = () => {
       guests: "2",
       link: "https://www.booking.com/hotel/in/sri-manjunatha-residency-bengaluru.en-gb.html?label=city-bangalore-lFhfs8zRphgoriYNf1fcxAS619456497502%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-411432614298%3Alp9062012%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YUBh8MufZgNFf8lRRSfobmc&sid=daca61104547bbcb9a62c55fe811017d&aid=375025&ucfs=1&checkin=2025-09-26&checkout=2025-09-27&dest_id=-2090174&dest_type=city&group_adults=1&no_rooms=1&group_children=0&nflt=price%3DINR-min-1200-1&srpvid=e6822662a3bf0327&srepoch=1755841513&matching_block_id=1429741101_414544309_2_0_0&atlas_src=sr_iw_title",
     },
+
   ];
 
 

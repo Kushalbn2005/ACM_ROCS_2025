@@ -61,7 +61,7 @@ const speakers: Speaker[] = [
   {
     name: "Jayavardhana Gubbi",
     title: "Principal Scientist, Sensorium.ai, Intelligent Multimodal Perception",
-    institution: "TCS Research, Bangalore",
+    institution: "TCS Research Bangalore",
     image: "./images/jayavardhan.png",
     email: "#",
     linkedin: "https://www.linkedin.com/in/jayavardhana-gubbi-43456223/?originalSubdomain=in",
@@ -75,6 +75,24 @@ const speakers: Speaker[] = [
     email: "#",
     linkedin: "https://www.linkedin.com/in/karthikeyan-shanmugam-b324a113/?originalSubdomain=in",
     website: "https://sites.google.com/view/karthikeyan-shanmugam",
+  },
+  {
+    name: "Padmanabha Venkatagiri S",
+    title: "Research Scientist",
+    institution: "IBM Research India",
+    image: "./images/Padmanabha 2.jpeg",
+    email: "#",
+    linkedin: "http://www.linkedin.com/in/padmanabha-venkatagiri-s-a0865426",
+    website: "https://scholar.google.co.in/citations?user=6LggKrMAAAAJ&hl=en",
+  },
+  {
+    name: "Chirag Jain",
+    title: "Research Scientist",
+    institution: "IISc Bangalore",
+    image: "./images/chirag-jain.jpg",
+    email: "#",
+    linkedin: "https://www.linkedin.com/in/chirgjain/?originalSubdomain=in",
+    website: "https://scholar.google.com/citations?user=Y2UmkF0AAAAJ&hl=en",
   },
 ];
 
