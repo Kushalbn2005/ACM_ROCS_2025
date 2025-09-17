@@ -87,7 +87,7 @@ const speakers: Speaker[] = [
   },
   {
     name: "Chirag Jain",
-    title: "Research Scientist",
+    title: "Assistant Professor and DBT Wellcome IA Intermediate Fellow",
     institution: "IISc Bangalore",
     image: "./images/chirag-jain.jpg",
     email: "#",
