@@ -20,7 +20,7 @@ const AboutAcm = () => {
                     {/* Left - Text */}
                     <div className="text-center md:text-left">
                         <p className="text-lg text-muted-foreground leading-relaxed">
-                            The ACM Student Chapter operating under the Department of Machine Learning at B.M.S. College of Engineering fosters innovation, collaboration,
+                            The ACM Student Chapter operating under the <b>Department of Machine Learning</b> at B.M.S. College of Engineering fosters innovation, collaboration,
                             and learning in computer science and technology.
                         </p>
                         <p className="text-lg text-muted-foreground mt-4 leading-relaxed">
