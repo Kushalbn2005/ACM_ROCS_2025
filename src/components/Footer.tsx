@@ -50,24 +50,18 @@ const Footer = () => {
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-primary" />
                 <span>
-                  Indraneel <span >(Student Co-ordinator)</span> <br />
+                  Indraneel <span >(ROCS SPOC)</span> <br />
                   <span className="font-mono">+91 99722 05808</span>
                 </span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-primary" />
                 <span>
-                  Dhruva <span >(Student Co-ordinator)</span> <br />
+                  Dhruva <span >(ROCS SPOC)</span> <br />
                   <span className="font-mono">+91 91088 74443</span>
                 </span>
               </div>
-              <div className="flex items-center gap-2">
-                <Phone className="h-4 w-4 text-primary" />
-                <span>
-                  Dr. Seemanthini K <span >(Faculty Co-ordinator)</span> <br />
-                  <span className="font-mono">+91 96862 69313</span>
-                </span>
-              </div>
+              
               <div className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-1" />
                 <span>

@@ -2,7 +2,8 @@ import React from "react";
 
 type Member = {
   name: string;
-  role: string;
+  role: string;     // designation
+  chapter: string;  // department / chapter / college
 };
 
 type Committee = {
@@ -14,29 +15,70 @@ const committees: Committee[] = [
   {
     title: "Program Committee",
     members: [
-      { name: "Venkatesh Raman", role: "Professor, IMSc" },
-      { name: "Sudip Misra", role: "Professor, IIT Kharagpur" },
-      { name: "Jayanth Harista", role: "Professor, IISc Bangalore" },
+      { name: "Venkatesh Raman", role: "Professor", chapter: "IMSc" },
+      { name: "Sudip Misra", role: "Professor", chapter: "IIT Kharagpur" },
+      { name: "Jayanth Harista", role: "Professor", chapter: "IISc Bangalore" },
     ],
   },
   {
     title: "Organizing Committee",
     members: [
-      { name: "Dr. Gowrishankar", role: "Dean (Academics), BMSCE" },
-      { name: "Dr. Seemanthini K", role: "Associate Professor, AIML, BMSCE" },
-      { name: "Dr. M Dakshayini", role: "Professor and Head – Department of Machine Learning" },
+      { name: "Dr. Gowrishankar", role: "Dean (Academics)", chapter: "BMSCE" },
+      {
+        name: "Dr. M Dakshayini",
+        role: "Professor and Head",
+        chapter: "Department of Machine Learning, BMSCE",
+      },
+      {
+        name: "Dr. Seemanthini K",
+        role: "Associate Professor",
+        chapter: "AIML, BMSCE",
+      },
     ],
   },
   {
-    title: "Student Organizing Committee",
+    title: "Chief Coordinators",
     members: [
-      { name: "H S Adwi", role: "Chair, BMSCE ACM Student Chapter" },
-      { name: "Indraneel Mulpuru", role: "Vice Chair, BMSCE ACM Student Chapter" },
-      { name: "B Roshini", role: "Secretary, BMSCE ACM Student Chapter" },
-      { name: "Dhruva G Shankar", role: "Treasurer, BMSCE ACM Student Chapter" },
-      { name: "Hrithik M", role: "Technical Head and Web Master, BMSCE ACM Student Chapter" },
-      { name: "Kanishka Sharma", role: "Membership Chair, BMSCE ACM Student Chapter" },
-      { name: "Srikanth M A", role: "Senior Coordinator, BMSCE ACM Student Chapter" },
+      {
+        name: "Dhruva G Shankar",
+        role: "Treasurer",
+        chapter: "BMSCE ACM Student Chapter",
+      },
+      {
+        name: "Indraneel Mulpuru",
+        role: "Vice Chair",
+        chapter: "BMSCE ACM Student Chapter",
+      },
+    ],
+  },
+  {
+    title: "Student Coordinators",
+    members: [
+      {
+        name: "H S Adwi",
+        role: "Chair",
+        chapter: "BMSCE ACM Student Chapter",
+      },
+      {
+        name: "B Roshini",
+        role: "Secretary",
+        chapter: "BMSCE ACM Student Chapter",
+      },
+      {
+        name: "Hrithik M",
+        role: "Technical Head and Web Master",
+        chapter: "BMSCE ACM Student Chapter",
+      },
+      {
+        name: "Kanishka Sharma",
+        role: "Membership Chair",
+        chapter: "BMSCE ACM Student Chapter",
+      },
+      {
+        name: "Srikanth M A",
+        role: "Senior Coordinator",
+        chapter: "BMSCE ACM Student Chapter",
+      },
     ],
   },
 ];
@@ -72,7 +114,11 @@ const CommitteesSection: React.FC = () => {
                   <p className="text-lg font-bold text-foreground mb-2">
                     {member.name}
                   </p>
-                  <p className="text-sm text-muted-foreground">{member.role}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {member.role}
+                    <br />
+                    {member.chapter}
+                  </p>
                 </div>
               ))}
             </div>
