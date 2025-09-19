@@ -13,6 +13,23 @@ type Committee = {
 
 const committees: Committee[] = [
   {
+    title: "Chief Patrons",
+    members: [
+      { name: "Dr. B S Ragini Narayan", role: "Donor Trustee & Member Secretary", chapter: "BMSET" },
+      { name: "Dr. Dayanand Pai", role: "Chairman, BMSCE & Life Trustee", chapter: "BMSET" },
+      { name: "Sri. Aviram Sharma", role: "Professor", chapter: "BMSET" },
+    ],
+  },
+  {
+    title: "BMSCE Patrons",
+    members: [
+      { name: "Sri. Gautham V Kalathur", role: "CTO", chapter: "BMSET" },
+      { name: "Dr. Bheemsha Arya", role: "Principal", chapter: "BMSCE" },
+      { name: "Dr. L Ravikumar", role: "Vice Principal (Academics)", chapter: "BMSCE" },
+      { name: "Dr. Seshachalam D", role: "Vice Principal (Administration)", chapter: "BMSCE" },
+    ],
+  },
+  {
     title: "Program Committee",
     members: [
       { name: "Venkatesh Raman", role: "Professor", chapter: "IMSc" },
