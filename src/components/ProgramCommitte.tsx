@@ -30,7 +30,7 @@ const committees: Committee[] = [
   {
     title: "Student Organizing Committee",
     members: [
-      { name: "Adwi H S", role: "Chair, BMSCE ACM Student Chapter" },
+      { name: "H S Adwi", role: "Chair, BMSCE ACM Student Chapter" },
       { name: "Indraneel Mulpuru", role: "Vice Chair, BMSCE ACM Student Chapter" },
       { name: "B Roshini", role: "Secretary, BMSCE ACM Student Chapter" },
       { name: "Dhruva G Shankar", role: "Treasurer, BMSCE ACM Student Chapter" },
