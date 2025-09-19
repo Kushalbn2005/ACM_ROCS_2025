@@ -8,6 +8,7 @@ import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import AboutBms from '@/components/AboutBms';
 import AboutAcm from '@/components/AboutAcm';
+import CommitteesSection from '@/components/ProgramCommitte';
 
 const Index = () => {
   return (
@@ -17,9 +18,10 @@ const Index = () => {
         <HeroSection />
         <AboutSection />
         <SpeakersSection />
+        <CommitteesSection />
         <AboutBms />
         <AboutAcm />
-        
+
         <VenueSection />
 
       </main>

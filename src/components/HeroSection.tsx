@@ -77,19 +77,43 @@ const HeroSection = () => {
           *Open to all college students
         </p>
 
-        <div className="flex flex-col items-center gap-4 my-2 md:flex-row md:justify-center md:gap-8">
-          <div className="flex items-center gap-2 text-white/80">
-            <Calendar className="h-6 w-6" /> <span>September 26-27, 2025</span>
-          </div>
-          <div className="flex items-center gap-2 text-white/80 whitespace-nowrap">
-            <Clock className="h-6 w-6" /> <span>9:30 AM – 5:30 PM</span>
-          </div>
-          <div className="flex items-center gap-2 text-white/80">
-            <MapPin className="h-6 w-6" /> <span>BMSCE, Karnataka</span>
-          </div>
-          <div className="flex items-center gap-2 text-white/80">
-            <Users className="h-6 w-6" /> <span>Offline Event</span>
-          </div>
+        {/* Highlighted Schedule Boxes */}
+        {/* Highlighted Schedule Boxes with matching gradients */}
+        <div className="flex flex-col md:flex-row flex-wrap justify-center gap-4 my-8">
+          {[
+            {
+              icon: Calendar,
+              text: "September 26–27, 2025",
+              gradient: "from-cyan-500/30 to-blue-500/30"
+            },
+            {
+              icon: Clock,
+              text: "9:30 AM – 5:30 PM",
+              gradient: "from-cyan-500/30 to-blue-500/30"
+            },
+            {
+              icon: MapPin,
+              text: "BMSCE, Karnataka",
+              gradient: "from-cyan-500/30 to-blue-500/30"
+            },
+            {
+              icon: Users,
+              text: "Offline Event",
+              gradient: "from-cyan-500/30 to-blue-500/30"
+            }
+          ].map(({ icon: Icon, text, gradient }, i) => (
+            <div
+              key={i}
+              className={`flex items-center gap-2 px-5 py-3
+                          rounded-xl bg-gradient-to-r ${gradient}
+                          border border-white/10 backdrop-blur-md
+                          shadow-md text-white/90
+                          hover:brightness-110 transition`}
+            >
+              <Icon className="h-6 w-6 text-white" />
+              <span className="text-base md:text-lg font-medium">{text}</span>
+            </div>
+          ))}
         </div>
 
 
@@ -99,3 +123,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
