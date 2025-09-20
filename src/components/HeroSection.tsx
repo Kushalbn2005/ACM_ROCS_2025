@@ -72,10 +72,7 @@ const HeroSection = () => {
           </Button>
         </div>
 
-        {/* New Note Below Buttons */}
-        <p className="text-white/90 text-md md:text-lg italic">
-          *Open to all college students. Registered participants will receive lunch and refreshments on both days.
-        </p>
+        
 
         {/* Highlighted Schedule Boxes */}
         {/* Highlighted Schedule Boxes with matching gradients */}
@@ -115,6 +112,10 @@ const HeroSection = () => {
             </div>
           ))}
         </div>
+        {/* New Note Below Buttons */}
+        <p className="text-white/90 text-md md:text-lg italic">
+          *Open to all college students. Registered participants will receive lunch and refreshments on both days.
+        </p>
 
 
       </div>
