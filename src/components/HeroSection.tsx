@@ -85,7 +85,7 @@ const HeroSection = () => {
             },
             {
               icon: Clock,
-              text: "9:30 AM – 5:30 PM",
+              text: "9:00 AM – 5:00 PM",
               gradient: "from-cyan-500/30 to-blue-500/30"
             },
             {
