@@ -114,7 +114,7 @@ const HeroSection = () => {
         </div>
         {/* New Note Below Buttons */}
         <p className="text-white/90 text-md md:text-lg italic">
-          *Open to all college students and faculties. Registered participants will receive lunch and refreshments on both days.
+          *Open to all college students. Registered participants will receive lunch and refreshments on both days.
         </p>
 
 
