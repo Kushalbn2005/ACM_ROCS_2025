@@ -25,7 +25,7 @@ const ScheduleSection = () => {
     },
     {
       time: "11:15 AM - 12:00 PM",
-      title: "Talk by Padmanabha Seshadri, IBM",
+      title: "Talk by Padmanabha Venkatagiri S, IBM",
       speaker: "",
       venue: "Auditorium-1"
     },
