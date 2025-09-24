@@ -25,7 +25,7 @@ const ScheduleSection = () => {
     },
     {
       time: "11:15 AM - 12:00 PM",
-      title: "Padmanabha Seshadri, IBM",
+      title: "Talk byPadmanabha Seshadri, IBM",
       speaker: "",
       venue: "Auditorium-1"
     },
@@ -55,7 +55,7 @@ const ScheduleSection = () => {
     },
     {
       time: "3:15 PM - 4:00 PM",
-      title: "Meenakshi D'Souza, IIIT Bangalore",
+      title: "Talk by Meenakshi D'Souza, IIIT Bangalore",
       speaker: "",
       venue: "Auditorium-1"
     },
