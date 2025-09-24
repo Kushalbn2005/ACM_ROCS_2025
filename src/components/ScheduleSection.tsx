@@ -6,140 +6,111 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 const ScheduleSection = () => {
   const day1Schedule = [
     {
-      time: "9:00 AM - 9:30 AM",
-      title: "Registration & Welcome",
+      time: "9:30 AM - 10:00 AM",
+      title: "Inauguration",
       speaker: "Organizing Committee",
-      type: "General",
-      venue: "Main Auditorium"
+      venue: "Auditorium-1"
     },
     {
-      time: "9:30 AM - 10:30 AM",
-      title: "Keynote: Future of AI Research",
-      speaker: "Dr. Rajesh Kumar",
-      type: "Keynote",
-      venue: "Main Auditorium"
+      time: "10:00 AM - 10:45 AM",
+      title: "Database Systems: The Hidden Power behind the Computing Throne",
+      speaker: "Jayant Haritsa, IISc",
+      venue: "Auditorium-1"
     },
     {
-      time: "10:30 AM - 11:00 AM",
-      title: "Coffee Break & Networking",
+      time: "10:45 AM - 11:15 AM",
+      title: "Break",
       speaker: "",
-      type: "Break",
-      venue: "Foyer"
+      venue: "Ground Floor, PJA Block"
     },
     {
-      time: "11:00 AM - 12:00 PM",
-      title: "Research Opportunities in Machine Learning",
-      speaker: "Dr. Rajesh Kumar",
-      type: "Talk",
-      venue: "Hall A"
+      time: "11:15 AM - 12:00 PM",
+      title: "Padmanabha Seshadri, IBM",
+      speaker: "",
+      venue: "Auditorium-1"
     },
     {
-      time: "12:00 PM - 1:00 PM",
-      title: "Cybersecurity Research Landscape",
-      speaker: "Dr. Priya Sharma",
-      type: "Talk",
-      venue: "Hall B"
+      time: "12:00 PM - 12:45 PM",
+      title: "Opportunities on Edge and Cloud Computing for AI Workloads",
+      speaker: "Yogesh Simmhan, IISc",
+      venue: "Auditorium-1"
     },
     {
-      time: "1:00 PM - 2:00 PM",
+      time: "12:45 PM - 2:00 PM",
       title: "Lunch Break",
       speaker: "",
-      type: "Break",
-      venue: "Cafeteria"
+      venue: "MPH Hall, Mess Ground"
     },
     {
-      time: "2:00 PM - 3:30 PM",
-      title: "Hands-on Workshop: Research Methodology",
-      speaker: "All Speakers",
-      type: "Workshop",
-      venue: "Lab 1 & 2"
-    },
-    {
-      time: "3:30 PM - 4:00 PM",
-      title: "Tea Break",
+      time: "2:00 PM - 2:45 PM",
+      title: "Ask Me Anything Session",
       speaker: "",
-      type: "Break",
-      venue: "Foyer"
+      venue: "Auditorium-1"
     },
     {
-      time: "4:00 PM - 5:00 PM",
-      title: "Panel Discussion: Career in Research",
-      speaker: "All Speakers",
-      type: "Panel",
-      venue: "Main Auditorium"
+      time: "2:45 PM - 3:15 PM",
+      title: "Break",
+      speaker: "",
+      venue: "Ground Floor, PJA Block"
+    },
+    {
+      time: "3:15 PM - 4:00 PM",
+      title: "Meenakshi D'Souza, IIIT Bangalore",
+      speaker: "",
+      venue: "Auditorium-1"
+    },
+    {
+      time: "4:00 PM - 4:45 PM",
+      title: "Multimodal earable device for longitudinal monitoring",
+      speaker: "Jayavardhana Lakshminarasimha, TCS Research",
+      venue: "Auditorium-1"
+    },
+    {
+      time: "4:45 PM - 5:30 PM",
+      title: "Overview of Generative Modeling Research at GDM India",
+      speaker: "Karthikeyan Shanmugam, Google Research",
+      venue: "Auditorium-1"
     }
   ];
 
   const day2Schedule = [
     {
-      time: "9:00 AM - 10:00 AM",
-      title: "Quantum Computing: The Next Frontier",
-      speaker: "Dr. Arun Patel",
-      type: "Keynote",
-      venue: "Main Auditorium"
+      time: "9:30 AM - 10:15 AM",
+      title: "The Good, the Bad and the Rational : A Cryptographer's Dilemma",
+      speaker: "Bhavana Kanukurthi, IISc",
+      venue: "Auditorium-1"
     },
     {
-      time: "10:00 AM - 10:30 AM",
-      title: "Coffee Break & Networking",
+      time: "10:15 AM - 11:00 AM",
+      title: "Algorithms for Assembling Genomes: Computer Science Meets Biology",
+      speaker: " Chirag Jain, IISc",
+      venue: "Auditorium-1"
+    },
+    {
+      time: "11:00 AM - 11:30 AM",
+      title: "Break",
       speaker: "",
-      type: "Break",
-      venue: "Foyer"
+      venue: "Ground Floor, PJA Block"
     },
     {
-      time: "10:30 AM - 11:30 AM",
-      title: "Student Research Presentations",
-      speaker: "Selected Students",
-      type: "Presentation",
-      venue: "Hall A & B"
+      time: "11:30 AM - 12:15 PM",
+      title: "Algorithmic Game Theory",
+      speaker: "Siddharth Barman, IISc",
+      venue: "Auditorium-1"
     },
     {
-      time: "11:30 AM - 12:30 PM",
-      title: "Industry Collaboration in Research",
-      speaker: "Industry Experts",
-      type: "Talk",
-      venue: "Main Auditorium"
+      time: "12:15 PM - 1:00 PM",
+      title: "Ask me Anything Session",
+      speaker: "",
+      venue: "Auditorium-1"
     },
     {
-      time: "12:30 PM - 1:30 PM",
+      time: "1:00 PM",
       title: "Lunch Break",
       speaker: "",
-      type: "Break",
-      venue: "Cafeteria"
-    },
-    {
-      time: "1:30 PM - 3:00 PM",
-      title: "Research Funding & Opportunities",
-      speaker: "Dr. Priya Sharma",
-      type: "Workshop",
-      venue: "Hall A"
-    },
-    {
-      time: "3:00 PM - 3:30 PM",
-      title: "Tea Break",
-      speaker: "",
-      type: "Break",
-      venue: "Foyer"
-    },
-    {
-      time: "3:30 PM - 4:30 PM",
-      title: "Closing Ceremony & Awards",
-      speaker: "Organizing Committee",
-      type: "Ceremony",
-      venue: "Main Auditorium"
+      venue: "MPH Hall, Mess Ground"
     }
   ];
-
-  const getTypeColor = (type: string) => {
-    switch (type.toLowerCase()) {
-      case 'keynote': return 'bg-primary text-primary-foreground';
-      case 'talk': return 'bg-accent text-accent-foreground';
-      case 'workshop': return 'bg-secondary text-secondary-foreground';
-      case 'panel': return 'bg-muted text-muted-foreground';
-      case 'presentation': return 'bg-primary-light text-white';
-      case 'ceremony': return 'bg-primary-dark text-white';
-      default: return 'bg-muted text-muted-foreground';
-    }
-  };
 
   const ScheduleDay = ({ schedule, day }: { schedule: typeof day1Schedule, day: string }) => (
     <div className="space-y-4">
@@ -159,9 +130,6 @@ const ScheduleSection = () => {
                   <h3 className="text-lg font-semibold text-foreground">
                     {session.title}
                   </h3>
-                  <Badge className={getTypeColor(session.type)}>
-                    {session.type}
-                  </Badge>
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4 text-sm text-muted-foreground">
