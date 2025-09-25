@@ -25,8 +25,8 @@ const ScheduleSection = () => {
     },
     {
       time: "11:15 AM - 12:00 PM",
-      title: "Talk by Padmanabha Venkatagiri S, IBM",
-      speaker: "",
+      title: "A bird's eye view of research @ IBM India",
+      speaker: "Padmanabha Venkatagiri S, IBM",
       venue: "Auditorium-1"
     },
     {
