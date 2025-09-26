@@ -9,13 +9,13 @@ const ScheduleSection = () => {
       time: "9:30 AM - 10:00 AM",
       title: "Inauguration",
       speaker: "Organizing Committee",
-      venue: "Auditorium-1"
+      venue: "Auditorium-1, Ground Floor, PJA Block"
     },
     {
       time: "10:00 AM - 10:45 AM",
       title: "Database Systems: The Hidden Power behind the Computing Throne",
       speaker: "Jayant Haritsa, IISc",
-      venue: "Auditorium-1"
+      venue: "Auditorium-1, Ground Floor, PJA Block"
     },
     {
       time: "10:45 AM - 11:15 AM",
@@ -27,13 +27,13 @@ const ScheduleSection = () => {
       time: "11:15 AM - 12:00 PM",
       title: "A bird's eye view of research @ IBM India",
       speaker: "Padmanabha Venkatagiri S, IBM",
-      venue: "Auditorium-1"
+      venue: "Auditorium-1, Ground Floor, PJA Block"
     },
     {
       time: "12:00 PM - 12:45 PM",
       title: "Opportunities on Edge and Cloud Computing for AI Workloads",
       speaker: "Yogesh Simmhan, IISc",
-      venue: "Auditorium-1"
+      venue: "Auditorium-1, Ground Floor, PJA Block"
     },
     {
       time: "12:45 PM - 2:00 PM",
@@ -45,7 +45,7 @@ const ScheduleSection = () => {
       time: "2:00 PM - 2:45 PM",
       title: "Ask Me Anything Session",
       speaker: "",
-      venue: "Auditorium-1"
+      venue: "Auditorium-1, Ground Floor, PJA Block"
     },
     {
       time: "2:45 PM - 3:15 PM",
@@ -57,19 +57,19 @@ const ScheduleSection = () => {
       time: "3:15 PM - 4:00 PM",
       title: "Talk by Meenakshi D'Souza, IIIT Bangalore",
       speaker: "",
-      venue: "Auditorium-1"
+      venue: "Auditorium-1, Ground Floor, PJA Block"
     },
     {
       time: "4:00 PM - 4:45 PM",
-      title: "Multimodal earable device for longitudinal monitoring",
+      title: "Multimodal eanable device for longitudinal monitoring",
       speaker: "Jayavardhana Lakshminarasimha, TCS Research",
-      venue: "Auditorium-1"
+      venue: "Auditorium-1, Ground Floor, PJA Block"
     },
     {
       time: "4:45 PM - 5:30 PM",
       title: "Overview of Generative Modeling Research at GDM India",
       speaker: "Karthikeyan Shanmugam, Google Research",
-      venue: "Auditorium-1"
+      venue: "Auditorium-1, Ground Floor, PJA Block"
     }
   ];
 
@@ -78,13 +78,13 @@ const ScheduleSection = () => {
       time: "9:30 AM - 10:15 AM",
       title: "The Good, the Bad and the Rational : A Cryptographer's Dilemma",
       speaker: "Bhavana Kanukurthi, IISc",
-      venue: "Auditorium-1"
+      venue: "Auditorium-1, Ground Floor, PJA Block"
     },
     {
       time: "10:15 AM - 11:00 AM",
       title: "Algorithms for Assembling Genomes: Computer Science Meets Biology",
       speaker: " Chirag Jain, IISc",
-      venue: "Auditorium-1"
+      venue: "Auditorium-1, Ground Floor, PJA Block"
     },
     {
       time: "11:00 AM - 11:30 AM",
@@ -96,13 +96,13 @@ const ScheduleSection = () => {
       time: "11:30 AM - 12:15 PM",
       title: "Algorithmic Game Theory",
       speaker: "Siddharth Barman, IISc",
-      venue: "Auditorium-1"
+      venue: "Auditorium-1, Ground Floor, PJA Block"
     },
     {
       time: "12:15 PM - 1:00 PM",
       title: "Ask me Anything Session",
       speaker: "",
-      venue: "Auditorium-1"
+      venue: "Auditorium-1, Ground Floor, PJA Block"
     },
     {
       time: "1:00 PM",
